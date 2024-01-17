@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/v1/employees")
 public class EmployeeController {
@@ -17,7 +18,7 @@ public class EmployeeController {
     private EmployeeService employeeService;
     @Autowired
 
-    public EmployeeController(EmployeeService employeeService) {
+    public EmployeeController (EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 
